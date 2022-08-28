@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Kumbh Sans";
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+.card {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.card-header {
+  background-image: url("../images/bg-pattern-card.svg");
+  width: 400px;
+  align-self: flex-start;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
+  -ms-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: center;
+}
+.card-header img {
+  width: 120px;
+  z-index: 1;
+  height: 120px;
+  object-fit: cover;
+  align-self: flex-end;
+  margin-bottom: -50px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.card-body {
+  width: 400px;
+  background-color: #fff;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 15px 15px;
+  -webkit-border-radius: 0 0 15px 15px;
+  -moz-border-radius: 0 0 15px 15px;
+  -ms-border-radius: 0 0 15px 15px;
+  -o-border-radius: 0 0 15px 15px;
+}
+.card-body .name {
+  margin-top: 50px;
+  font-weight: 700;
+  font-style: 18px;
+}
+.card-body .name span {
+  color: hsl(0, 0%, 59%);
+}
+.card-body .city {
+  margin-top: -50px;
+  color: hsl(0, 0%, 59%);
+}
+.card-body .stats {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-left: -70px;
+  margin-bottom: 30px;
+}
+.card-body .stat {
+  margin-left: 50px;
+}
+.card-body .stat p {
+  font-weight: 700;
+}
+.card-body .stat span {
+  color: hsl(0, 0%, 59%);
+}
+
+body {
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
